@@ -1,0 +1,11 @@
+<?xml version="1.0" ?><catalog>
+<script name="scan modele use case" path="..\..\..\..\macros\scan modele use case.py" icon-path="" show-menu="false" show-toolbar="false">
+<description></description>
+</script>
+<script name="recurse_model" path="..\..\..\..\macros\recurse_model.py" icon-path="" show-menu="false" show-toolbar="false">
+<description></description>
+</script>
+<script name="generate_datavault_for_sprint" path="..\..\..\..\macros\generate_datavault_for_sprint.py" icon-path="" show-menu="false" show-toolbar="false">
+<description></description>
+</script>
+</catalog>

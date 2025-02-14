@@ -1,0 +1,233 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="StoreOwner" version="4">
+  <OBJECT>
+    <ID name="StoreOwner" mc="Standard.Class" uid="b0229880-b9ba-49bf-a3d3-15ea40370079"/>
+    <PID name="finance" mc="Standard.Package" uid="65027758-1fb9-4f5a-8967-9da59a65b699"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[StoreOwner]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedAttribute">
+        <OBJECT>
+          <ID name="dateStart" mc="Standard.Attribute" uid="28c59927-fd53-49db-b489-c8e9003ac620"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[dateStart]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="date" mc="Standard.DataType" uid="00000004-0000-0014-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Properties">
+              <OBJECT>
+                <ID name="116a8043-e809-4779-820e-7e2b1d930c7b" mc="Infrastructure.TypedPropertyTable" uid="d34f22bc-186e-4188-b3c4-e0a494653753"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[116a8043-e809-4779-820e-7e2b1d930c7b]]></ATT>
+                  <ATT name="Content"><![CDATA[#Mon Feb 10 15:18:19 CET 2025
+Business\ Intelligence=
+Retail=
+Finance=Sprint1
+demosql=
+Extranet=sprint2
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="550c9175-b76e-4d4b-b4e0-8da98ee0fe15"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedEnd">
+        <OBJECT>
+          <ID name="legalEntity" mc="Standard.AssociationEnd" uid="ce961500-d975-4fd4-b624-2263036c6c9c"/>
+          <ATTRIBUTES>
+            <ATT name="Aggregation">KindIsAssociation</ATT>
+            <ATT name="IsChangeable">true</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[legalEntity]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID name="LegalEntity" mc="Standard.Class" uid="ffc51642-3fc8-48cf-b8f8-1e09e39f4c40"/>
+            </LINK>
+            <COMP relation="Opposite">
+              <OBJECT>
+                <ID name="" mc="Standard.AssociationEnd" uid="d7e060fc-5e2d-4864-8d56-d2429698d589"/>
+                <ATTRIBUTES>
+                  <ATT name="Aggregation">KindIsAssociation</ATT>
+                  <ATT name="IsChangeable">true</ATT>
+                  <ATT name="Changeable">AccesNone</ATT>
+                  <ATT name="IsDerived">false</ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[*]]></ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Opposite">
+                    <COMPID name="legalEntity" mc="Standard.AssociationEnd" uid="ce961500-d975-4fd4-b624-2263036c6c9c"/>
+                  </COMP>
+                  <COMP relation="Association">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Association" uid="c5c55bae-03e1-4b8c-bf75-0f1db162f8aa"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Association">
+              <COMPID name="" mc="Standard.Association" uid="c5c55bae-03e1-4b8c-bf75-0f1db162f8aa"/>
+            </COMP>
+            <COMP relation="Properties">
+              <OBJECT>
+                <ID name="116a8043-e809-4779-820e-7e2b1d930c7b" mc="Infrastructure.TypedPropertyTable" uid="890d7fb7-9c7c-499a-aa26-f936b31bc0cc"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[116a8043-e809-4779-820e-7e2b1d930c7b]]></ATT>
+                  <ATT name="Content"><![CDATA[#Mon Feb 10 15:18:19 CET 2025
+Business\ Intelligence=
+Retail=
+Finance=Sprint1
+demosql=
+Extranet=sprint2
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="550c9175-b76e-4d4b-b4e0-8da98ee0fe15"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="store" mc="Standard.AssociationEnd" uid="8d08d8f6-2141-4604-ad4c-01d8db3c81d1"/>
+          <ATTRIBUTES>
+            <ATT name="Aggregation">KindIsAssociation</ATT>
+            <ATT name="IsChangeable">true</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[store]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID name="Store" mc="Standard.Class" uid="508faae3-de58-4881-b650-d841ef335735"/>
+            </LINK>
+            <COMP relation="Opposite">
+              <OBJECT>
+                <ID name="" mc="Standard.AssociationEnd" uid="4ed74246-eaeb-46c2-b39b-c984ecd27caf"/>
+                <ATTRIBUTES>
+                  <ATT name="Aggregation">KindIsAssociation</ATT>
+                  <ATT name="IsChangeable">true</ATT>
+                  <ATT name="Changeable">AccesNone</ATT>
+                  <ATT name="IsDerived">false</ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[*]]></ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Opposite">
+                    <COMPID name="store" mc="Standard.AssociationEnd" uid="8d08d8f6-2141-4604-ad4c-01d8db3c81d1"/>
+                  </COMP>
+                  <COMP relation="Association">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Association" uid="c8c2fa4e-8fad-47c3-85d3-cbb3cb93d70f"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Association">
+              <COMPID name="" mc="Standard.Association" uid="c8c2fa4e-8fad-47c3-85d3-cbb3cb93d70f"/>
+            </COMP>
+            <COMP relation="Properties">
+              <OBJECT>
+                <ID name="116a8043-e809-4779-820e-7e2b1d930c7b" mc="Infrastructure.TypedPropertyTable" uid="f16f4d14-a957-4b48-b341-10256fe4b93f"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[116a8043-e809-4779-820e-7e2b1d930c7b]]></ATT>
+                  <ATT name="Content"><![CDATA[#Mon Feb 10 15:18:19 CET 2025
+Business\ Intelligence=
+Retail=
+Finance=Sprint1
+demosql=
+Extranet=sprint2
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="550c9175-b76e-4d4b-b4e0-8da98ee0fe15"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

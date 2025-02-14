@@ -1,0 +1,466 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="City" version="4">
+  <OBJECT>
+    <ID name="City" mc="Standard.Class" uid="91455b77-9f78-48d1-be8f-b1e0acce4305"/>
+    <PID name="retail" mc="Standard.Package" uid="f275541a-eb0c-4d22-9992-a0736b84f048"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[City]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedAttribute">
+        <OBJECT>
+          <ID name="code" mc="Standard.Attribute" uid="2c9bb92e-e1cb-4087-918a-d6a86316327b"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[code]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="string" mc="Standard.DataType" uid="00000004-0000-000d-0000-000000000000"/>
+            </LINK>
+            <LINK relation="Extension">
+              <FOREIGNID name="SatelliteInformation" mc="Infrastructure.Stereotype" uid="94BC7E7E-18C0-4EE7-B01D-ABE6A9F6515F"/>
+              <ID name="CartographieUsage" mc="Infrastructure.Stereotype" uid="116a8043-e809-4779-820e-7e2b1d930c7b"/>
+              <ID name="TraductionEN" mc="Infrastructure.Stereotype" uid="7c912ec8-ff06-4027-932f-6869449e4bff"/>
+              <ID name="TraductionFR" mc="Infrastructure.Stereotype" uid="02a0986a-1abe-4803-bb0b-aa932f0c7b66"/>
+            </LINK>
+            <COMP relation="Properties">
+              <OBJECT>
+                <ID name="94BC7E7E-18C0-4EE7-B01D-ABE6A9F6515F" mc="Infrastructure.TypedPropertyTable" uid="1593b295-0dc7-409d-9424-04e703366f9f"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[94BC7E7E-18C0-4EE7-B01D-ABE6A9F6515F]]></ATT>
+                  <ATT name="Content"><![CDATA[#Wed Dec 06 14:18:22 CET 2023
+SatelliteName=
+IsEnabled=true
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="25D4B181-B1E1-4EDA-B585-0FF569EB55A0"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="02a0986a-1abe-4803-bb0b-aa932f0c7b66" mc="Infrastructure.TypedPropertyTable" uid="b0fc37d2-73e0-426c-a871-6783c7504d95"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[02a0986a-1abe-4803-bb0b-aa932f0c7b66]]></ATT>
+                  <ATT name="Content"><![CDATA[#Sun Dec 31 08:49:38 CET 2023
+Description=Code ville
+Name=code
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="eb75830f-f182-40a3-996b-22de4ae5875f"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="7c912ec8-ff06-4027-932f-6869449e4bff" mc="Infrastructure.TypedPropertyTable" uid="15dc4e29-09cd-4355-8901-4907ee937d09"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[7c912ec8-ff06-4027-932f-6869449e4bff]]></ATT>
+                  <ATT name="Content"><![CDATA[#Sun Dec 31 08:49:38 CET 2023
+Description=City code
+Name=code
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="ff14810c-3fe5-409a-b3ef-d745298dcbda"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="116a8043-e809-4779-820e-7e2b1d930c7b" mc="Infrastructure.TypedPropertyTable" uid="8751b571-ded7-452c-bb77-43cb65bd7d7d"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[116a8043-e809-4779-820e-7e2b1d930c7b]]></ATT>
+                  <ATT name="Content"><![CDATA[#Tue May 16 10:31:21 CEST 2023
+Business\ Intelligence=
+Extranet=sprint1
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="550c9175-b76e-4d4b-b4e0-8da98ee0fe15"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.Note" uid="5a813dea-6d18-46b0-8829-bd527a4118d6"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[City code]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="label" mc="Standard.Attribute" uid="acc9a6c6-25f1-40f3-9847-7f02e3d8efe2"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[label]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="string" mc="Standard.DataType" uid="00000004-0000-000d-0000-000000000000"/>
+            </LINK>
+            <LINK relation="Extension">
+              <FOREIGNID name="SatelliteInformation" mc="Infrastructure.Stereotype" uid="94BC7E7E-18C0-4EE7-B01D-ABE6A9F6515F"/>
+              <ID name="CartographieUsage" mc="Infrastructure.Stereotype" uid="116a8043-e809-4779-820e-7e2b1d930c7b"/>
+              <ID name="TraductionEN" mc="Infrastructure.Stereotype" uid="7c912ec8-ff06-4027-932f-6869449e4bff"/>
+              <ID name="TraductionFR" mc="Infrastructure.Stereotype" uid="02a0986a-1abe-4803-bb0b-aa932f0c7b66"/>
+            </LINK>
+            <COMP relation="Properties">
+              <OBJECT>
+                <ID name="94BC7E7E-18C0-4EE7-B01D-ABE6A9F6515F" mc="Infrastructure.TypedPropertyTable" uid="32904089-f712-43cc-8701-16edc3640628"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[94BC7E7E-18C0-4EE7-B01D-ABE6A9F6515F]]></ATT>
+                  <ATT name="Content"><![CDATA[#Wed Dec 06 14:18:22 CET 2023
+SatelliteName=
+IsEnabled=true
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="25D4B181-B1E1-4EDA-B585-0FF569EB55A0"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="02a0986a-1abe-4803-bb0b-aa932f0c7b66" mc="Infrastructure.TypedPropertyTable" uid="05e68f0f-2cd8-47a6-9808-464c58a16d46"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[02a0986a-1abe-4803-bb0b-aa932f0c7b66]]></ATT>
+                  <ATT name="Content"><![CDATA[#Sun Dec 31 08:49:38 CET 2023
+Description=Libellé ville
+Name=libelle
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="eb75830f-f182-40a3-996b-22de4ae5875f"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="7c912ec8-ff06-4027-932f-6869449e4bff" mc="Infrastructure.TypedPropertyTable" uid="ae141a45-d015-4c30-9194-eb137b0279e7"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[7c912ec8-ff06-4027-932f-6869449e4bff]]></ATT>
+                  <ATT name="Content"><![CDATA[#Sun Dec 31 08:49:38 CET 2023
+Description=City label
+Name=label
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="ff14810c-3fe5-409a-b3ef-d745298dcbda"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="116a8043-e809-4779-820e-7e2b1d930c7b" mc="Infrastructure.TypedPropertyTable" uid="1505055e-6528-4019-aaa6-2c09a5f32340"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[116a8043-e809-4779-820e-7e2b1d930c7b]]></ATT>
+                  <ATT name="Content"><![CDATA[#Tue May 16 10:31:21 CEST 2023
+Business\ Intelligence=
+Extranet=sprint1
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="550c9175-b76e-4d4b-b4e0-8da98ee0fe15"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.Note" uid="62208ea8-b68f-4f47-b301-fa4d9a439a05"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[City label]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedEnd">
+        <OBJECT>
+          <ID name="country" mc="Standard.AssociationEnd" uid="5cd07ea2-ebbe-40ce-961e-6d41fd4809ed"/>
+          <ATTRIBUTES>
+            <ATT name="Aggregation">KindIsAssociation</ATT>
+            <ATT name="IsChangeable">true</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[country]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID name="Country" mc="Standard.Class" uid="50021058-013c-471b-a94a-47fe9293d71d"/>
+            </LINK>
+            <COMP relation="Opposite">
+              <OBJECT>
+                <ID name="" mc="Standard.AssociationEnd" uid="65f235de-a9df-46eb-bf18-6cbeff5f696d"/>
+                <ATTRIBUTES>
+                  <ATT name="Aggregation">KindIsAssociation</ATT>
+                  <ATT name="IsChangeable">true</ATT>
+                  <ATT name="Changeable">ReadWrite</ATT>
+                  <ATT name="IsDerived">false</ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMin"></ATT>
+                  <ATT name="MultiplicityMax"></ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Opposite">
+                    <COMPID name="country" mc="Standard.AssociationEnd" uid="5cd07ea2-ebbe-40ce-961e-6d41fd4809ed"/>
+                  </COMP>
+                  <COMP relation="Association">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Association" uid="a59cf17c-c308-4dcf-90fa-b4c9a6e9c33f"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Association">
+              <COMPID name="" mc="Standard.Association" uid="a59cf17c-c308-4dcf-90fa-b4c9a6e9c33f"/>
+            </COMP>
+            <LINK relation="Extension">
+              <FOREIGNID name="LinkInformation" mc="Infrastructure.Stereotype" uid="1af4a584-3202-409a-8f72-2a6296fd90b3"/>
+              <ID name="CartographieUsage" mc="Infrastructure.Stereotype" uid="116a8043-e809-4779-820e-7e2b1d930c7b"/>
+              <ID name="TraductionEN" mc="Infrastructure.Stereotype" uid="7c912ec8-ff06-4027-932f-6869449e4bff"/>
+              <ID name="TraductionFR" mc="Infrastructure.Stereotype" uid="02a0986a-1abe-4803-bb0b-aa932f0c7b66"/>
+            </LINK>
+            <COMP relation="Properties">
+              <OBJECT>
+                <ID name="1af4a584-3202-409a-8f72-2a6296fd90b3" mc="Infrastructure.TypedPropertyTable" uid="2cfafd17-71cb-4709-8560-9da6e7313827"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[1af4a584-3202-409a-8f72-2a6296fd90b3]]></ATT>
+                  <ATT name="Content"><![CDATA[#Wed Dec 06 14:18:22 CET 2023
+IsEnabled=true
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="863216DA-986D-4428-A7E0-9C16D6CB467E"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="02a0986a-1abe-4803-bb0b-aa932f0c7b66" mc="Infrastructure.TypedPropertyTable" uid="13c95e58-7894-4668-ba80-564941a89a4d"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[02a0986a-1abe-4803-bb0b-aa932f0c7b66]]></ATT>
+                  <ATT name="Content"><![CDATA[#Sun Dec 31 08:49:38 CET 2023
+Description=Pays où se situe la ville
+Name=pays
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="eb75830f-f182-40a3-996b-22de4ae5875f"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="7c912ec8-ff06-4027-932f-6869449e4bff" mc="Infrastructure.TypedPropertyTable" uid="fe24edea-0580-4c97-9f0a-36951ff00620"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[7c912ec8-ff06-4027-932f-6869449e4bff]]></ATT>
+                  <ATT name="Content"><![CDATA[#Sun Dec 31 08:49:38 CET 2023
+Description=Country where the city is located
+Name=country
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="ff14810c-3fe5-409a-b3ef-d745298dcbda"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="116a8043-e809-4779-820e-7e2b1d930c7b" mc="Infrastructure.TypedPropertyTable" uid="f06e2575-15fc-439e-bb01-076e98115603"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[116a8043-e809-4779-820e-7e2b1d930c7b]]></ATT>
+                  <ATT name="Content"><![CDATA[#Tue May 16 10:31:21 CEST 2023
+Business\ Intelligence=
+Extranet=sprint1
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="550c9175-b76e-4d4b-b4e0-8da98ee0fe15"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.Note" uid="efae1add-94ad-4b9d-9e72-4e6594b67f4e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Country where the city is located]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="HubInformation" mc="Infrastructure.Stereotype" uid="59FA8D72-1D49-4643-B4BD-3F971C313F00"/>
+        <ID name="TraductionEN" mc="Infrastructure.Stereotype" uid="7c912ec8-ff06-4027-932f-6869449e4bff"/>
+        <ID name="TraductionFR" mc="Infrastructure.Stereotype" uid="02a0986a-1abe-4803-bb0b-aa932f0c7b66"/>
+      </LINK>
+      <COMP relation="Properties">
+        <OBJECT>
+          <ID name="59FA8D72-1D49-4643-B4BD-3F971C313F00" mc="Infrastructure.TypedPropertyTable" uid="c8da034c-ec11-4687-b9b8-e3b77b5b5abb"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[59FA8D72-1D49-4643-B4BD-3F971C313F00]]></ATT>
+            <ATT name="Content"><![CDATA[#Wed Dec 06 14:18:22 CET 2023
+IsEnabled=true
+]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="19728E5C-6BB2-49CF-9520-02F08FECB617"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="02a0986a-1abe-4803-bb0b-aa932f0c7b66" mc="Infrastructure.TypedPropertyTable" uid="42de4f4c-6138-4b67-a956-d310644554fa"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[02a0986a-1abe-4803-bb0b-aa932f0c7b66]]></ATT>
+            <ATT name="Content"><![CDATA[#Sun Dec 31 08:49:37 CET 2023
+Description=La ville
+Name=Ville
+]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="eb75830f-f182-40a3-996b-22de4ae5875f"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="7c912ec8-ff06-4027-932f-6869449e4bff" mc="Infrastructure.TypedPropertyTable" uid="1a85c24a-fcfc-4175-a266-c31414fbc054"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[7c912ec8-ff06-4027-932f-6869449e4bff]]></ATT>
+            <ATT name="Content"><![CDATA[#Sun Dec 31 08:49:37 CET 2023
+Description=The city
+Name=City
+]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="ff14810c-3fe5-409a-b3ef-d745298dcbda"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="5b931665-9252-4d30-8349-ad50d9d03009"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[The city]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

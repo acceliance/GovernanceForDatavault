@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="modèle retail" version="4">
+  <OBJECT>
+    <ID name="modèle retail" mc="Standard.Package" uid="75b9884c-0519-4df8-a25b-7d0bda46cdbb"/>
+    <PID name="Modèle Retail" mc="Standard.Project" uid="64f56b35-4d55-4b91-b341-70ee8af6d717"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[modèle retail]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="fr" mc="Standard.Package" uid="007d62e7-b964-488d-b696-d59d6bafe38a"/>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="JavaGenerationNode" mc="Infrastructure.Stereotype" uid="936E5DBF-7C5D-4324-99DA-0E727735F4A8"/>
+      </LINK>
+      <COMP relation="Properties">
+        <OBJECT>
+          <ID name="6a39137e-8d53-4358-8a20-41bdf91c9218" mc="Infrastructure.TypedPropertyTable" uid="c8742d63-4305-41ab-8b49-7a7da2a6c875"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[6a39137e-8d53-4358-8a20-41bdf91c9218]]></ATT>
+            <ATT name="Content"><![CDATA[#Mon Aug 08 14:43:06 CEST 2022
+isRootOfTheModel=true
+]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="a62954af-2503-49e6-a1c9-876db56c44d4"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="936E5DBF-7C5D-4324-99DA-0E727735F4A8" mc="Infrastructure.TypedPropertyTable" uid="fc7ac42c-3d14-4998-8305-d7e588df934e"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[936E5DBF-7C5D-4324-99DA-0E727735F4A8]]></ATT>
+            <ATT name="Content"><![CDATA[#Mon Aug 08 14:44:48 CEST 2022
+UseNode=true
+]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="62BF2CBD-AFDD-44A3-9836-F4AC4B433808"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

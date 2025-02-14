@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Diagrammes" version="4">
+  <OBJECT>
+    <ID name="Diagrammes" mc="Standard.Package" uid="46cc6905-0c8b-436c-a22b-695f2f5da269"/>
+    <PID name="Modèle Retail" mc="Standard.Project" uid="64f56b35-4d55-4b91-b341-70ee8af6d717"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Diagrammes]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Domaines" mc="Standard.Package" uid="acdc29fe-532a-411d-ad96-b3f8d3fdb315"/>
+        <COMPID name="Usages" mc="Standard.Package" uid="acc6976b-c817-4069-8f8f-4ae0cd5e42c3"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

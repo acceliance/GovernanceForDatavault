@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="DiagramColorizer" version="4">
+  <OBJECT>
+    <ID name="DiagramColorizer" mc="Infrastructure.ModuleComponent" uid="a6d596f2-440b-4f56-883a-dbe61bf3d804"/>
+    <ATTRIBUTES>
+      <ATT name="LicenseKey">0</ATT>
+      <ATT name="MajVersion">5</ATT>
+      <ATT name="MinVersion">4</ATT>
+      <ATT name="MinMinVersion"><![CDATA[1]]></ATT>
+      <ATT name="MinBinVersionCompatibility"></ATT>
+      <ATT name="JavaClassName"><![CDATA[fr.acceliance.modelio.diagramcolorizer.impl.DiagramColorizerModule]]></ATT>
+      <ATT name="Name"><![CDATA[DiagramColorizer]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedProfile">
+        <COMPID name="DiagramColorizerProfile" mc="Infrastructure.Profile" uid="f82ec883-4412-4eab-85cd-32fe69654131"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

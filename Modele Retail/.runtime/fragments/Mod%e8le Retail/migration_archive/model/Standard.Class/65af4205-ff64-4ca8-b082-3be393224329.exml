@@ -1,0 +1,316 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="IndividualGenre" version="4">
+  <OBJECT>
+    <ID name="IndividualGenre" mc="Standard.Class" uid="65af4205-ff64-4ca8-b082-3be393224329"/>
+    <PID name="party" mc="Standard.Package" uid="1c9a4a2e-68e1-4411-a90d-655ce774f91d"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[IndividualGenre]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedAttribute">
+        <OBJECT>
+          <ID name="code" mc="Standard.Attribute" uid="ea4f24f6-9787-466d-9717-778c16c128d7"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[code]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="string" mc="Standard.DataType" uid="00000004-0000-000d-0000-000000000000"/>
+            </LINK>
+            <LINK relation="Extension">
+              <ID name="CartographieUsage" mc="Infrastructure.Stereotype" uid="116a8043-e809-4779-820e-7e2b1d930c7b"/>
+              <FOREIGNID name="SatelliteInformation" mc="Infrastructure.Stereotype" uid="94BC7E7E-18C0-4EE7-B01D-ABE6A9F6515F"/>
+              <ID name="TraductionEN" mc="Infrastructure.Stereotype" uid="7c912ec8-ff06-4027-932f-6869449e4bff"/>
+              <ID name="TraductionFR" mc="Infrastructure.Stereotype" uid="02a0986a-1abe-4803-bb0b-aa932f0c7b66"/>
+            </LINK>
+            <COMP relation="Properties">
+              <OBJECT>
+                <ID name="94BC7E7E-18C0-4EE7-B01D-ABE6A9F6515F" mc="Infrastructure.TypedPropertyTable" uid="854b897e-cc21-424b-96f1-06c881447ee5"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[94BC7E7E-18C0-4EE7-B01D-ABE6A9F6515F]]></ATT>
+                  <ATT name="Content"><![CDATA[#Wed Dec 06 14:18:22 CET 2023
+SatelliteName=
+IsEnabled=true
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="25D4B181-B1E1-4EDA-B585-0FF569EB55A0"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="02a0986a-1abe-4803-bb0b-aa932f0c7b66" mc="Infrastructure.TypedPropertyTable" uid="61bb7a34-f409-4a7f-95bc-029ed0fcfa87"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[02a0986a-1abe-4803-bb0b-aa932f0c7b66]]></ATT>
+                  <ATT name="Content"><![CDATA[#Sun Dec 31 08:49:38 CET 2023
+Description=Code sexe
+Name=code
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="eb75830f-f182-40a3-996b-22de4ae5875f"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="7c912ec8-ff06-4027-932f-6869449e4bff" mc="Infrastructure.TypedPropertyTable" uid="1d8a10f3-5882-45a1-8ec0-c344c660e3c4"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[7c912ec8-ff06-4027-932f-6869449e4bff]]></ATT>
+                  <ATT name="Content"><![CDATA[#Sun Dec 31 08:49:38 CET 2023
+Description=Sex code
+Name=code
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="ff14810c-3fe5-409a-b3ef-d745298dcbda"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="116a8043-e809-4779-820e-7e2b1d930c7b" mc="Infrastructure.TypedPropertyTable" uid="5671111c-4945-40bd-a56f-6be01c0024cc"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[116a8043-e809-4779-820e-7e2b1d930c7b]]></ATT>
+                  <ATT name="Content"><![CDATA[#Tue May 16 10:31:21 CEST 2023
+Business\ Intelligence=
+Extranet=sprint1
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="550c9175-b76e-4d4b-b4e0-8da98ee0fe15"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.Note" uid="45ea4eef-ed76-42e6-9a4a-4d9d3eb4c942"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Sex code]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="label" mc="Standard.Attribute" uid="edd46eea-2680-439e-8c80-c076b61c9ca2"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[label]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="string" mc="Standard.DataType" uid="00000004-0000-000d-0000-000000000000"/>
+            </LINK>
+            <LINK relation="Extension">
+              <ID name="CartographieUsage" mc="Infrastructure.Stereotype" uid="116a8043-e809-4779-820e-7e2b1d930c7b"/>
+              <FOREIGNID name="SatelliteInformation" mc="Infrastructure.Stereotype" uid="94BC7E7E-18C0-4EE7-B01D-ABE6A9F6515F"/>
+              <ID name="TraductionEN" mc="Infrastructure.Stereotype" uid="7c912ec8-ff06-4027-932f-6869449e4bff"/>
+              <ID name="TraductionFR" mc="Infrastructure.Stereotype" uid="02a0986a-1abe-4803-bb0b-aa932f0c7b66"/>
+            </LINK>
+            <COMP relation="Properties">
+              <OBJECT>
+                <ID name="94BC7E7E-18C0-4EE7-B01D-ABE6A9F6515F" mc="Infrastructure.TypedPropertyTable" uid="8a75c15a-743a-43da-a91b-cb80d4cc4c90"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[94BC7E7E-18C0-4EE7-B01D-ABE6A9F6515F]]></ATT>
+                  <ATT name="Content"><![CDATA[#Wed Dec 06 14:18:22 CET 2023
+SatelliteName=
+IsEnabled=true
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="25D4B181-B1E1-4EDA-B585-0FF569EB55A0"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="02a0986a-1abe-4803-bb0b-aa932f0c7b66" mc="Infrastructure.TypedPropertyTable" uid="7a4abd58-40c3-474b-ae2f-82c2c37c46a7"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[02a0986a-1abe-4803-bb0b-aa932f0c7b66]]></ATT>
+                  <ATT name="Content"><![CDATA[#Sun Dec 31 08:49:38 CET 2023
+Description=Libellé sexe
+Name=libelle
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="eb75830f-f182-40a3-996b-22de4ae5875f"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="7c912ec8-ff06-4027-932f-6869449e4bff" mc="Infrastructure.TypedPropertyTable" uid="04887420-e650-4c04-9f09-d846adda5536"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[7c912ec8-ff06-4027-932f-6869449e4bff]]></ATT>
+                  <ATT name="Content"><![CDATA[#Sun Dec 31 08:49:38 CET 2023
+Description=Sex label
+Name=label
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="ff14810c-3fe5-409a-b3ef-d745298dcbda"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="116a8043-e809-4779-820e-7e2b1d930c7b" mc="Infrastructure.TypedPropertyTable" uid="12eae7f0-a328-4937-b4fa-cb022a91c831"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[116a8043-e809-4779-820e-7e2b1d930c7b]]></ATT>
+                  <ATT name="Content"><![CDATA[#Tue May 16 10:31:21 CEST 2023
+Business\ Intelligence=
+Extranet=sprint1
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="550c9175-b76e-4d4b-b4e0-8da98ee0fe15"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.Note" uid="9c6489f3-00fd-45bc-91fe-9be5007c2cf0"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Sex label]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="HubInformation" mc="Infrastructure.Stereotype" uid="59FA8D72-1D49-4643-B4BD-3F971C313F00"/>
+        <ID name="TraductionEN" mc="Infrastructure.Stereotype" uid="7c912ec8-ff06-4027-932f-6869449e4bff"/>
+        <ID name="TraductionFR" mc="Infrastructure.Stereotype" uid="02a0986a-1abe-4803-bb0b-aa932f0c7b66"/>
+      </LINK>
+      <COMP relation="Properties">
+        <OBJECT>
+          <ID name="59FA8D72-1D49-4643-B4BD-3F971C313F00" mc="Infrastructure.TypedPropertyTable" uid="c988a850-26a5-4bdb-8991-eb7f867fede9"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[59FA8D72-1D49-4643-B4BD-3F971C313F00]]></ATT>
+            <ATT name="Content"><![CDATA[#Wed Dec 06 14:18:22 CET 2023
+IsEnabled=true
+]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="19728E5C-6BB2-49CF-9520-02F08FECB617"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="02a0986a-1abe-4803-bb0b-aa932f0c7b66" mc="Infrastructure.TypedPropertyTable" uid="07e814f8-5565-4312-a687-15ed66e872b0"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[02a0986a-1abe-4803-bb0b-aa932f0c7b66]]></ATT>
+            <ATT name="Content"><![CDATA[#Sun Dec 31 08:49:37 CET 2023
+Description=Le sexe des la personne physique
+Name=GenreIndividu
+]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="eb75830f-f182-40a3-996b-22de4ae5875f"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="7c912ec8-ff06-4027-932f-6869449e4bff" mc="Infrastructure.TypedPropertyTable" uid="4bd99f5c-46b8-463a-aa91-9c1fb6ea7751"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[7c912ec8-ff06-4027-932f-6869449e4bff]]></ATT>
+            <ATT name="Content"><![CDATA[#Sun Dec 31 08:49:37 CET 2023
+Description=The gender of the physical person
+Name=IndividualGenre
+]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="ff14810c-3fe5-409a-b3ef-d745298dcbda"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="e234c07f-da15-4e7b-a0a4-950f5e502789"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[The gender of the physical person]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

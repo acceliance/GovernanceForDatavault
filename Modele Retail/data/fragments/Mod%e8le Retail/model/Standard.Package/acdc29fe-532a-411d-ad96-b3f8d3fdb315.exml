@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Domains" version="4">
+  <OBJECT>
+    <ID name="Domains" mc="Standard.Package" uid="acdc29fe-532a-411d-ad96-b3f8d3fdb315"/>
+    <PID name="Diagrams" mc="Standard.Package" uid="46cc6905-0c8b-436c-a22b-695f2f5da269"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Domains]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Product">
+        <COMPID name="View - Party" mc="Standard.ClassDiagram" uid="d26d1bce-8c21-4d09-b8d9-14214db0d3d0"/>
+        <COMPID name="View - City Country" mc="Standard.ClassDiagram" uid="de2348c5-f356-488e-bf69-5a1d4bf7c643"/>
+        <COMPID name="View - Sales in Store" mc="Standard.ClassDiagram" uid="793ca5b6-0e81-434c-9169-0fcabbb50f54"/>
+        <COMPID name="Réseau - Magasins" mc="Standard.ClassDiagram" uid="dbba0a91-052b-4f65-9952-dd917b360ee2"/>
+        <COMPID name="Réseau - Mise en Franchise" mc="Standard.ClassDiagram" uid="329e8b1a-25c7-4bd9-b5a7-fbaf36d13fba"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

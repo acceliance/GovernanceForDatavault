@@ -1,0 +1,92 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="sales" version="4">
+  <OBJECT>
+    <ID name="sales" mc="Standard.Package" uid="dd18703e-51e7-40b3-a066-dfb18033f83d"/>
+    <PID name="data" mc="Standard.Package" uid="685d6428-1490-4058-bef1-88b15ba796fd"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[sales]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Ticket" mc="Standard.Class" uid="d26789e0-ae16-4453-9edc-d5465297f9f5"/>
+        <COMPID name="ProductBuying" mc="Standard.Class" uid="1a1a9444-71c9-451f-9e53-3a0bb0af10fd"/>
+      </COMP>
+      <LINK relation="Extension">
+        <ID name="TraductionEN" mc="Infrastructure.Stereotype" uid="7c912ec8-ff06-4027-932f-6869449e4bff"/>
+        <ID name="TraductionFR" mc="Infrastructure.Stereotype" uid="02a0986a-1abe-4803-bb0b-aa932f0c7b66"/>
+        <FOREIGNID name="DiagramColorizerColorPackage" mc="Infrastructure.Stereotype" uid="693f54c9-4ddd-9354-9f39-e147e4f5af32"/>
+      </LINK>
+      <COMP relation="Properties">
+        <OBJECT>
+          <ID name="02a0986a-1abe-4803-bb0b-aa932f0c7b66" mc="Infrastructure.TypedPropertyTable" uid="1eb04834-7ed4-42c8-a937-ae4378cd3b4d"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[02a0986a-1abe-4803-bb0b-aa932f0c7b66]]></ATT>
+            <ATT name="Content"><![CDATA[#Fri Nov 24 15:54:13 CET 2023
+Description=Domaine du commerce
+Name=sales
+]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="eb75830f-f182-40a3-996b-22de4ae5875f"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="7c912ec8-ff06-4027-932f-6869449e4bff" mc="Infrastructure.TypedPropertyTable" uid="493f438f-3fe2-4869-8fab-b60cfad099a8"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[7c912ec8-ff06-4027-932f-6869449e4bff]]></ATT>
+            <ATT name="Content"><![CDATA[#Fri Nov 24 15:54:13 CET 2023
+Description=Sales domain
+Name=sales
+]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="ff14810c-3fe5-409a-b3ef-d745298dcbda"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="693f54c9-4ddd-9354-9f39-e147e4f5af32" mc="Infrastructure.TypedPropertyTable" uid="ccafe927-9be6-4806-90d4-91c6a7bb588c"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[693f54c9-4ddd-9354-9f39-e147e4f5af32]]></ATT>
+            <ATT name="Content"><![CDATA[#Tue May 07 10:49:45 CEST 2024
+Color=200,200,30
+]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="39af1fbf-f9b5-4fdf-a2af-3e62e65a730c"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="412fb41e-31ab-4bbb-b4ff-c29463c8ffa0"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Sales domain]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

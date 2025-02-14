@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Usages" version="4">
+  <OBJECT>
+    <ID name="Usages" mc="Standard.Package" uid="acc6976b-c817-4069-8f8f-4ae0cd5e42c3"/>
+    <PID name="Diagrammes" mc="Standard.Package" uid="46cc6905-0c8b-436c-a22b-695f2f5da269"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Usages]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Product">
+        <COMPID name="Data Product 1 - Retail - Acte Achat Magasin" mc="Standard.ClassDiagram" uid="3c33d9b7-43f0-4ac2-b203-1f780bd441a8"/>
+        <COMPID name="Data Product 2 - Finance en Franchise" mc="Standard.ClassDiagram" uid="4078d119-bf22-4d59-ac0e-e87f98f6ac5d"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

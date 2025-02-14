@@ -1,0 +1,406 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Store" version="4">
+  <OBJECT>
+    <ID name="Store" mc="Standard.Class" uid="508faae3-de58-4881-b650-d841ef335735"/>
+    <PID name="retail" mc="Standard.Package" uid="f275541a-eb0c-4d22-9992-a0736b84f048"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Store]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedAttribute">
+        <OBJECT>
+          <ID name="code" mc="Standard.Attribute" uid="71764cb0-7364-4ef1-be3b-54955d083fb1"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[code]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="string" mc="Standard.DataType" uid="00000004-0000-000d-0000-000000000000"/>
+            </LINK>
+            <LINK relation="Extension">
+              <ID name="TraductionEN" mc="Infrastructure.Stereotype" uid="7c912ec8-ff06-4027-932f-6869449e4bff"/>
+              <ID name="TraductionFR" mc="Infrastructure.Stereotype" uid="02a0986a-1abe-4803-bb0b-aa932f0c7b66"/>
+              <ID name="CartographyUsage" mc="Infrastructure.Stereotype" uid="116a8043-e809-4779-820e-7e2b1d930c7b"/>
+            </LINK>
+            <COMP relation="Properties">
+              <OBJECT>
+                <ID name="02a0986a-1abe-4803-bb0b-aa932f0c7b66" mc="Infrastructure.TypedPropertyTable" uid="6b48f894-c019-4014-b2bb-21df417570e2"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[02a0986a-1abe-4803-bb0b-aa932f0c7b66]]></ATT>
+                  <ATT name="Content"><![CDATA[#Sun Dec 31 08:49:38 CET 2023
+Description=Code du magasin
+Name=code
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="eb75830f-f182-40a3-996b-22de4ae5875f"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="7c912ec8-ff06-4027-932f-6869449e4bff" mc="Infrastructure.TypedPropertyTable" uid="4f657838-845e-42e7-acdc-7e9ce1f7af21"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[7c912ec8-ff06-4027-932f-6869449e4bff]]></ATT>
+                  <ATT name="Content"><![CDATA[#Sun Dec 31 08:49:38 CET 2023
+Description=Store code
+Name=code
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="ff14810c-3fe5-409a-b3ef-d745298dcbda"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="116a8043-e809-4779-820e-7e2b1d930c7b" mc="Infrastructure.TypedPropertyTable" uid="0397c2a4-e509-4ebf-8a36-51f9c75f34e0"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[116a8043-e809-4779-820e-7e2b1d930c7b]]></ATT>
+                  <ATT name="Content"><![CDATA[#Thu Feb 13 18:00:21 CET 2025
+Business\ Intelligence=
+Retail=Sprint1
+Finance=
+Extranet=sprint1
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="550c9175-b76e-4d4b-b4e0-8da98ee0fe15"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.Note" uid="f7962325-600a-49e8-bdaf-c97987497709"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Store code]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="label" mc="Standard.Attribute" uid="956f9cbf-a0ca-4fe1-8fd4-65ed045c7b19"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[label]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="string" mc="Standard.DataType" uid="00000004-0000-000d-0000-000000000000"/>
+            </LINK>
+            <LINK relation="Extension">
+              <ID name="TraductionEN" mc="Infrastructure.Stereotype" uid="7c912ec8-ff06-4027-932f-6869449e4bff"/>
+              <ID name="TraductionFR" mc="Infrastructure.Stereotype" uid="02a0986a-1abe-4803-bb0b-aa932f0c7b66"/>
+              <ID name="CartographyUsage" mc="Infrastructure.Stereotype" uid="116a8043-e809-4779-820e-7e2b1d930c7b"/>
+            </LINK>
+            <COMP relation="Properties">
+              <OBJECT>
+                <ID name="02a0986a-1abe-4803-bb0b-aa932f0c7b66" mc="Infrastructure.TypedPropertyTable" uid="16a16809-cd5c-416c-96d4-8f9fcf55ccce"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[02a0986a-1abe-4803-bb0b-aa932f0c7b66]]></ATT>
+                  <ATT name="Content"><![CDATA[#Sun Dec 31 08:49:38 CET 2023
+Description=Libellé du magasin
+Name=libelle
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="eb75830f-f182-40a3-996b-22de4ae5875f"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="7c912ec8-ff06-4027-932f-6869449e4bff" mc="Infrastructure.TypedPropertyTable" uid="1769c123-9426-4cab-8f32-c4d475f5236d"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[7c912ec8-ff06-4027-932f-6869449e4bff]]></ATT>
+                  <ATT name="Content"><![CDATA[#Sun Dec 31 08:49:38 CET 2023
+Description=Store label
+Name=label
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="ff14810c-3fe5-409a-b3ef-d745298dcbda"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="116a8043-e809-4779-820e-7e2b1d930c7b" mc="Infrastructure.TypedPropertyTable" uid="5427bc18-a72f-4891-8b22-42ede7de24ab"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[116a8043-e809-4779-820e-7e2b1d930c7b]]></ATT>
+                  <ATT name="Content"><![CDATA[#Thu Feb 13 18:00:21 CET 2025
+Business\ Intelligence=
+Retail=Sprint1
+Finance=
+Extranet=sprint1
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="550c9175-b76e-4d4b-b4e0-8da98ee0fe15"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.Note" uid="ff406a35-cef8-40e8-905b-847621bc411d"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Store label]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedEnd">
+        <OBJECT>
+          <ID name="city" mc="Standard.AssociationEnd" uid="dfd3806c-ed23-4063-a9ef-9d454d21c35f"/>
+          <ATTRIBUTES>
+            <ATT name="Aggregation">KindIsAssociation</ATT>
+            <ATT name="IsChangeable">true</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[city]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID name="City" mc="Standard.Class" uid="91455b77-9f78-48d1-be8f-b1e0acce4305"/>
+            </LINK>
+            <COMP relation="Opposite">
+              <OBJECT>
+                <ID name="" mc="Standard.AssociationEnd" uid="c62c79d4-6c58-4c7c-a4ee-f6270f0b3727"/>
+                <ATTRIBUTES>
+                  <ATT name="Aggregation">KindIsAssociation</ATT>
+                  <ATT name="IsChangeable">true</ATT>
+                  <ATT name="Changeable">ReadWrite</ATT>
+                  <ATT name="IsDerived">false</ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMin"></ATT>
+                  <ATT name="MultiplicityMax"></ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Opposite">
+                    <COMPID name="city" mc="Standard.AssociationEnd" uid="dfd3806c-ed23-4063-a9ef-9d454d21c35f"/>
+                  </COMP>
+                  <COMP relation="Association">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Association" uid="e7412ba2-880d-475a-a20d-4969ae0cfaad"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Association">
+              <COMPID name="" mc="Standard.Association" uid="e7412ba2-880d-475a-a20d-4969ae0cfaad"/>
+            </COMP>
+            <LINK relation="Extension">
+              <ID name="TraductionEN" mc="Infrastructure.Stereotype" uid="7c912ec8-ff06-4027-932f-6869449e4bff"/>
+              <ID name="TraductionFR" mc="Infrastructure.Stereotype" uid="02a0986a-1abe-4803-bb0b-aa932f0c7b66"/>
+              <ID name="CartographyUsage" mc="Infrastructure.Stereotype" uid="116a8043-e809-4779-820e-7e2b1d930c7b"/>
+            </LINK>
+            <COMP relation="Properties">
+              <OBJECT>
+                <ID name="02a0986a-1abe-4803-bb0b-aa932f0c7b66" mc="Infrastructure.TypedPropertyTable" uid="5726ef04-9222-41a8-87ff-79dee4bcea61"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[02a0986a-1abe-4803-bb0b-aa932f0c7b66]]></ATT>
+                  <ATT name="Content"><![CDATA[#Sun Dec 31 08:49:38 CET 2023
+Description=Vile d'implentation du magasin
+Name=ville
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="eb75830f-f182-40a3-996b-22de4ae5875f"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="7c912ec8-ff06-4027-932f-6869449e4bff" mc="Infrastructure.TypedPropertyTable" uid="90401c16-f76a-4a03-86ef-363400a89c6e"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[7c912ec8-ff06-4027-932f-6869449e4bff]]></ATT>
+                  <ATT name="Content"><![CDATA[#Sun Dec 31 08:49:38 CET 2023
+Description=Store location city
+Name=city
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="ff14810c-3fe5-409a-b3ef-d745298dcbda"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="116a8043-e809-4779-820e-7e2b1d930c7b" mc="Infrastructure.TypedPropertyTable" uid="282c0ccb-e326-4784-9d73-f7a9b253e59a"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[116a8043-e809-4779-820e-7e2b1d930c7b]]></ATT>
+                  <ATT name="Content"><![CDATA[#Thu Feb 13 18:00:21 CET 2025
+Business\ Intelligence=
+Retail=Sprint1
+Finance=
+Extranet=sprint1
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="550c9175-b76e-4d4b-b4e0-8da98ee0fe15"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.Note" uid="ec5f272c-677f-4b10-a0ab-bb0f40cfa2d3"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Store location city]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <ID name="TraductionEN" mc="Infrastructure.Stereotype" uid="7c912ec8-ff06-4027-932f-6869449e4bff"/>
+        <ID name="TraductionFR" mc="Infrastructure.Stereotype" uid="02a0986a-1abe-4803-bb0b-aa932f0c7b66"/>
+      </LINK>
+      <COMP relation="Properties">
+        <OBJECT>
+          <ID name="02a0986a-1abe-4803-bb0b-aa932f0c7b66" mc="Infrastructure.TypedPropertyTable" uid="002dd113-161c-400f-a589-bbd1ef2f2a11"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[02a0986a-1abe-4803-bb0b-aa932f0c7b66]]></ATT>
+            <ATT name="Content"><![CDATA[#Sun Dec 31 08:49:38 CET 2023
+Description=Le magasin physique accueillant les clients personnes physiques
+Name=Magasin
+]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="eb75830f-f182-40a3-996b-22de4ae5875f"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="7c912ec8-ff06-4027-932f-6869449e4bff" mc="Infrastructure.TypedPropertyTable" uid="b826e415-34b2-440c-8300-1b025d2e4a7d"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[7c912ec8-ff06-4027-932f-6869449e4bff]]></ATT>
+            <ATT name="Content"><![CDATA[#Sun Dec 31 08:49:38 CET 2023
+Description=The physical store welcoming physical person customers
+Name=Store
+]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="ff14810c-3fe5-409a-b3ef-d745298dcbda"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="0033c190-9a22-4737-9743-b13cdbf66533"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[The physical store welcoming physical person customers]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

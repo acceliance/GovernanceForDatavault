@@ -1,0 +1,10 @@
+create or replace TABLE SAT_COUNTRY (
+   HUB_COUNTRY_HK VARCHAR(32),
+   SAT_LOAD_DTS TIMESTAMP_NTZ(9) NOT NULL COMMENT 'Load Time',
+   SAT_REC_SRC VARCHAR(50) NOT NULL COMMENT 'Application Source',
+   SAT_HASH_DIFF VARCHAR(32) NOT NULL,
+   CODE TEXT COMMENT 'Country code ISO',
+   LABEL TEXT COMMENT 'Country label ISO',
+   constraint PK_SAT_COUNTRY primary key (HUB_COUNTRY_HK, SAT_LOAD_DTS),
+   constraint FK_SAT_COUNTRY foreign key (HUB_COUNTRY_HK) references HUB_COUNTRY(HUB_COUNTRY_HK)
+);

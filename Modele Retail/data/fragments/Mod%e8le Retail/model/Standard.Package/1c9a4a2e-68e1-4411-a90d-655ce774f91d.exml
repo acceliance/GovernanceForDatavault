@@ -1,0 +1,98 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="party" version="4">
+  <OBJECT>
+    <ID name="party" mc="Standard.Package" uid="1c9a4a2e-68e1-4411-a90d-655ce774f91d"/>
+    <PID name="data" mc="Standard.Package" uid="685d6428-1490-4058-bef1-88b15ba796fd"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[party]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Party" mc="Standard.Class" uid="c9605583-9bce-419b-b822-3653b396a079"/>
+        <COMPID name="Individual" mc="Standard.Class" uid="42434eb1-083e-4e8b-aabc-8280e38391fd"/>
+        <COMPID name="IndividualGenre" mc="Standard.Class" uid="65af4205-ff64-4ca8-b082-3be393224329"/>
+        <COMPID name="CommunicationReference" mc="Standard.Class" uid="c28b43dd-4197-4829-8226-0c6e2fdedb9a"/>
+        <COMPID name="Phone" mc="Standard.Class" uid="1156065e-d274-414d-9c39-da734ed1e65d"/>
+        <COMPID name="Email" mc="Standard.Class" uid="e227c779-e12e-403f-b477-5e56f807cea0"/>
+        <COMPID name="LegalEntity" mc="Standard.Class" uid="ffc51642-3fc8-48cf-b8f8-1e09e39f4c40"/>
+      </COMP>
+      <LINK relation="Extension">
+        <ID name="TraductionEN" mc="Infrastructure.Stereotype" uid="7c912ec8-ff06-4027-932f-6869449e4bff"/>
+        <ID name="TraductionFR" mc="Infrastructure.Stereotype" uid="02a0986a-1abe-4803-bb0b-aa932f0c7b66"/>
+        <FOREIGNID name="DiagramColorizerColorPackage" mc="Infrastructure.Stereotype" uid="693f54c9-4ddd-9354-9f39-e147e4f5af32"/>
+      </LINK>
+      <COMP relation="Properties">
+        <OBJECT>
+          <ID name="02a0986a-1abe-4803-bb0b-aa932f0c7b66" mc="Infrastructure.TypedPropertyTable" uid="e80b3008-d929-4a4e-8e92-d6d03e4f5e0c"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[02a0986a-1abe-4803-bb0b-aa932f0c7b66]]></ATT>
+            <ATT name="Content"><![CDATA[#Fri Nov 24 15:54:13 CET 2023
+Description=Domaine des tiers, personnes morales et  physiques
+Name=personne
+]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="eb75830f-f182-40a3-996b-22de4ae5875f"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="7c912ec8-ff06-4027-932f-6869449e4bff" mc="Infrastructure.TypedPropertyTable" uid="16743486-416a-4ef0-83a6-518a63d036f8"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[7c912ec8-ff06-4027-932f-6869449e4bff]]></ATT>
+            <ATT name="Content"><![CDATA[#Fri Nov 24 15:54:13 CET 2023
+Description=Domain of Parties
+Name=party
+]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="ff14810c-3fe5-409a-b3ef-d745298dcbda"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="693f54c9-4ddd-9354-9f39-e147e4f5af32" mc="Infrastructure.TypedPropertyTable" uid="f1448c6b-7745-46eb-8fc4-3a75be2782ff"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[693f54c9-4ddd-9354-9f39-e147e4f5af32]]></ATT>
+            <ATT name="Content"><![CDATA[#Tue May 07 10:47:53 CEST 2024
+Color=255,50,255
+FontColor=255,255,255
+]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="39af1fbf-f9b5-4fdf-a2af-3e62e65a730c"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="302fb5d7-d777-40e1-8e86-b7bd661a2eb1"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Domain of Parties, Individuals and Enterprises]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

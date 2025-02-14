@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="fr" version="4">
+  <OBJECT>
+    <ID name="fr" mc="Standard.Package" uid="007d62e7-b964-488d-b696-d59d6bafe38a"/>
+    <PID name="modèle retail" mc="Standard.Package" uid="75b9884c-0519-4df8-a25b-7d0bda46cdbb"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[fr]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="mycompany" mc="Standard.Package" uid="6fddbb24-f49e-40cf-be7d-ccb437c865f3"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

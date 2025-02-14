@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Domaines" version="4">
+  <OBJECT>
+    <ID name="Domaines" mc="Standard.Package" uid="acdc29fe-532a-411d-ad96-b3f8d3fdb315"/>
+    <PID name="Diagrammes" mc="Standard.Package" uid="46cc6905-0c8b-436c-a22b-695f2f5da269"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Domaines]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Product">
+        <COMPID name="Personne - Macro" mc="Standard.ClassDiagram" uid="d26d1bce-8c21-4d09-b8d9-14214db0d3d0"/>
+        <COMPID name="Réseau - Magasins" mc="Standard.ClassDiagram" uid="b6d946bb-ece5-4ee1-84c6-75b8cfaca50a"/>
+        <COMPID name="Vue Ville Pays" mc="Standard.ClassDiagram" uid="de2348c5-f356-488e-bf69-5a1d4bf7c643"/>
+        <COMPID name="MCD - Achats magasin" mc="Standard.ClassDiagram" uid="793ca5b6-0e81-434c-9169-0fcabbb50f54"/>
+        <COMPID name="MLD - Attributes" mc="Standard.ClassDiagram" uid="7aa6bb7e-7122-4402-92c7-c23145694054"/>
+        <COMPID name="MLP - Profitabilité" mc="Standard.ClassDiagram" uid="a3b27f3f-1743-414a-ae54-1e88ad767dd4"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

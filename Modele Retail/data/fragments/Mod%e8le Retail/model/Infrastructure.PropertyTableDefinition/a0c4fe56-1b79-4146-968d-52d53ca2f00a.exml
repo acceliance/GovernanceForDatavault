@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="PropertyTableDefinition" version="4">
+  <OBJECT>
+    <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="a0c4fe56-1b79-4146-968d-52d53ca2f00a"/>
+    <PID name="COL_NAME" mc="Infrastructure.Stereotype" uid="4e992606-01d4-4ea3-85f0-d999c0086b3b"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[PropertyTableDefinition]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Owned">
+        <OBJECT>
+          <ID name="Name" mc="Infrastructure.PropertyDefinition" uid="f7d21023-fd1e-4d33-aec6-ecc629557b43"/>
+          <ATTRIBUTES>
+            <ATT name="IsEditable">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[Name]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="Text" mc="Infrastructure.PropertyType" uid="01a40888-0000-002a-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

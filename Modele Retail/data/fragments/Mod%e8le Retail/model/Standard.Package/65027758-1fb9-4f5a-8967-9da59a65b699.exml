@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="finance" version="4">
+  <OBJECT>
+    <ID name="finance" mc="Standard.Package" uid="65027758-1fb9-4f5a-8967-9da59a65b699"/>
+    <PID name="data" mc="Standard.Package" uid="685d6428-1490-4058-bef1-88b15ba796fd"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[finance]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="StoreOwner" mc="Standard.Class" uid="b0229880-b9ba-49bf-a3d3-15ea40370079"/>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="DiagramColorizerColorPackage" mc="Infrastructure.Stereotype" uid="693f54c9-4ddd-9354-9f39-e147e4f5af32"/>
+      </LINK>
+      <COMP relation="Properties">
+        <OBJECT>
+          <ID name="693f54c9-4ddd-9354-9f39-e147e4f5af32" mc="Infrastructure.TypedPropertyTable" uid="ef9c9991-5e0b-470d-9515-ac340e6a170f"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[693f54c9-4ddd-9354-9f39-e147e4f5af32]]></ATT>
+            <ATT name="Content"><![CDATA[#Tue May 07 10:53:43 CEST 2024
+Color=200,50,70
+FontColor=255,255,255
+]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="39af1fbf-f9b5-4fdf-a2af-3e62e65a730c"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

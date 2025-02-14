@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="TraductionEN" version="4">
+  <OBJECT>
+    <ID name="TraductionEN" mc="Infrastructure.Stereotype" uid="7c912ec8-ff06-4027-932f-6869449e4bff"/>
+    <PID name="LocalProfile" mc="Infrastructure.Profile" uid="b43322de-4ba7-4240-bb07-feaeb62df6f0"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"></ATT>
+      <ATT name="IsHidden">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="LabelKey"><![CDATA[TraductionEN]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Infrastructure.ModelElement]]></ATT>
+      <ATT name="Name"><![CDATA[TraductionEN]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DefinedTable">
+        <COMPID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="ff14810c-3fe5-409a-b3ef-d745298dcbda"/>
+      </COMP>
+      <LINK relation="Parent">
+        <FOREIGNID name="CartographyManagerTranslation" mc="Infrastructure.Stereotype" uid="6a39137e-8d53-4358-8b40-41bdf91c9218"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

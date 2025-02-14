@@ -1,0 +1,109 @@
+link:https://www.acceliance.fr/en/offers/governance-for-your-data-platform/[image:readme/logo-acc-amp-gauche-2400.png[]]
+
+= Governance for Datavault on Snowflake by Acceliance
+
+
+We are pleased to provide you with a link:https://github.com/acceliance/ModelioForDataGovernance[practice for governing] the Datavault model including **automatic raw model generator**
+
+This Datavault generator is freely brought to you by link:https://www.acceliance.fr/en/[Acceliance], feel free to reuse it and adapt it for your own needs
+
+= Before starting
+== Install Modelio
+Please run the installation steps explained in the link:https://github.com/acceliance/ModelioForDataGovernance[Github repo]
+
+Next, open Modelio, switch workspace to current Github repo and then open project
+
+= Governance in Real Life
+Before generating any production Model, we must set several things
+
+== The Retail domain model
+The Modelio project used for illustrating Governance for Datavault is Retail domain, involving sending products into physical stores generating tickets.
+
+The Model is present in the project as follows:
+image:readme/gov-dv-001.png[Retail Model sprint1]
+
+== anchor:bookmark-govsprints[]Governing the Agile Sprints
+Sprints are governed at the **single attribute (inside the objet) level**
+
+We will set the sprint 1 for retail Mesh/Product as the visual model diagram (previous screenshot), click the right mouse button on the tree node (as selected in the previous screenshot)
+
+=== Setting the Sprint1 for retail perimeter
+The diagram shows the exact expected output so we will use the usage **cartography features** of Acceliance practice:
+
+image:readme/gov-dv-002.png[Select the diagram and right-click the mouse button]
+
+When opening the Excel file (you will find it in the cartography folder of the project) you will notice that all the data from the diagram appears into the list
+image:readme/gov-dv-003.png[Open the Excel file for cartography is outputted]
+
+Now set **Sprint1** for the whole column of **Data Mesh/Product Retail**
+image:readme/gov-dv-004.png[Set the sprint]
+
+After saving and closing the Excel file, now import the usage cartography back into the model referential
+image:readme/gov-dv-005.png[Choose the import cartography option]
+
+image:readme/gov-dv-006.png[Click on imort button]
+
+image:readme/gov-dv-007.png[The importation is finished as the log confirms]
+
+When selecting any attribute in the Model diagram, you will notice the the sprint is set into the usage cartography stereotype
+image:readme/gov-dv-008.png[The usage stereotype] 
+
+=== What we have seen as to Governance
+The perimeters of Data product delivery is managed by setting usages and sprint labels
+
+Now we will see how to effectively generate the output based on this **governance practice**
+
+== Datavault and Automatic Generation for Snowflake
+=== Scripting the Datavault generation
+The Model contains all the metadata needed to generate code for actual deployment on the Data platform
+
+Modelio uses Python language to link:macros/generate_datavault_for_sprint.py[script against the Model]
+
+Notice that the script is based on the usage cartography as seen in the <<bookmark-govsprints,Governance for sprints> part of the practice
+image:readme/gov-dv-009.png[Usage in the script]
+
+=== Invoking the script
+The script is invoked from Modelio as this
+image:readme/gov-dv-010.png[]
+
+Select the **generate_datavault_for_sprint.py** script to run
+image:readme/gov-dv-011.png[]
+
+The DDL script for Snowflake is generated into a link:datavault_generated/retail_Finance_Sprint1_2025-02-13[dedicated folder] suffixed with the today date
+image:readme/gov-dv-012.png[]
+
+== More on Governance
+=== Documenting the Model
+The Model can be annotated with extensive documentation, as with cartography, the contents is governed using Excel (must be reinjectd back into the model)
+
+**The data modelling workshops wtih the functional experts is the best moment to capture business definition on the artefacts** and it is possible to keep this information and propagate it to the enterprise ecosystem
+
+To export the dictionary, use the following command
+image:readme/gov-dv-013.png[]
+
+Then select the proper options
+image:readme/gov-dv-014.png[]
+
+==== Alignement with the Generation
+The documentation is automatically aligned with the deploymebnt into the Data platform
+
+From capture
+image:readme/gov-dv-015.png[]
+
+To deployment
+image:readme/gov-dv-016.png[]
+
+==== Outputting for Enterprise Data Governance
+The documentation can be outputted to any Data Governance platform such as Collibra, DataGalaxy or any other tool using Pyton scripting
+
+= Summarising on Governance
+= What's next ?
+
+There are missing functionalitties such as:
+
+* Transaction Links generation (those links are used to optimize sql object volumetry, the technical pattern is that the object must have **only** relations of cadinality **Many To One**, in the case of the Retail Model, the **ProductBuying** object is a right candidate)
+* Multi Satellite generation (this feature can be implemeted using stereotypes and then generating several satellites for one Model object)
+* You may adapt the script for other platform such as Postgres (modify the type mapping table in the Python script)
+
+All of the improvement can be added into the link:macros/generate_datavault_for_sprint.py[Python script]
+
