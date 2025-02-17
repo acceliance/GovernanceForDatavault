@@ -97,6 +97,22 @@ image:readme/gov-dv-016.png[]
 The documentation can be outputted to any Data Governance platform such as Collibra, DataGalaxy or any other tool using Pyton scripting
 
 = Summarising on Governance
+We have seen the following items regarding Datavault Governance:
+
+* Viewing the Model in a fully Business & graphical manner (with no technical considerations at all)
+
+** Opening the opportunity to workshop/communicate with non-IT people
+
+* Governing the sprints at the level of the single data inside the object/concept
+
+** Using the graphical view to produce the sprint (WYSIWYG)
+
+* Using the Model metadata to generate physical implementation perfectly aligned with the Business view
+
+** Thus creating an automated continuum of Architecture
+
+** Using the UML stereotypes to control aspects of the physical generation
+
 = What's next ?
 
 There are missing functionalitties such as:
