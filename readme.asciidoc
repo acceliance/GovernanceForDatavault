@@ -123,3 +123,6 @@ There are missing functionalitties such as:
 
 All of the improvement can be added into the link:macros/generate_datavault_for_sprint.py[Python script]
 
+= How to support us ?
+
+If you like our works and freely reuse them for your own projects, link:https://www.linkedin.com/company/acceliance/[please give testimony on our LinkedIn company page]
