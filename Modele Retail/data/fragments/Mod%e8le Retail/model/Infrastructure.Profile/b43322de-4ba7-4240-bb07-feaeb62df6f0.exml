@@ -13,8 +13,7 @@
         <COMPID name="TraductionFR" mc="Infrastructure.Stereotype" uid="02a0986a-1abe-4803-bb0b-aa932f0c7b66"/>
         <COMPID name="TraductionEN" mc="Infrastructure.Stereotype" uid="7c912ec8-ff06-4027-932f-6869449e4bff"/>
         <COMPID name="SAPMapping" mc="Infrastructure.Stereotype" uid="b2ea2722-b021-4296-b80f-324665f11a26"/>
-        <COMPID name="HUB_NAME" mc="Infrastructure.Stereotype" uid="0c44d096-0a78-4d72-a59d-febab4c80900"/>
-        <COMPID name="COL_NAME" mc="Infrastructure.Stereotype" uid="4e992606-01d4-4ea3-85f0-d999c0086b3b"/>
+        <COMPID name="SatelliteName" mc="Infrastructure.Stereotype" uid="78038090-4e4c-4381-b63a-de8ee4ccac57"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

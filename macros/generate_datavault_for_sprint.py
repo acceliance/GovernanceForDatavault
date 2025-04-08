@@ -41,43 +41,74 @@ for c in mas.getClasses():
     sthubname = modutils.getStereotypeInstValueString ( c.cls, modutils.getProjectStereotype ( "HUB_NAME" ), "Name" )
     hubname = modutils.getUpperSqlNameFromJavaName ( c.cls.getName () )
     if modutils.isNullOrEmptyString ( sthubname ) == False: hubname = sthubname
-    if ( c.attributes.size() == 0 ): 
-        print "HUB not created, no attributes => " + hubname
-    else:
-        f = modutils.createFile ( genpath.getAbsolutePath () + "\\HUB_" + hubname + ".ddl" )
-        sb = modutils.createStringBuilder ()
-        sb.append ( "create or replace TABLE HUB_" + hubname + " (\n" )
-        sb.append ( "	HUB_" + hubname + "_HK VARCHAR(32),\n" )
-        sb.append ( "	HUB_" + hubname + "_BK VARCHAR(32),\n" )
-        sb.append ( "	HUB_LOAD_DTS TIMESTAMP_NTZ(9) NOT NULL COMMENT 'Load Time',\n" )
-        sb.append ( "	HUB_REC_SRC VARCHAR(50) NOT NULL COMMENT 'Application Source',\n" )
-        sb.append ( "   constraint PK_HUB_" + hubname + " primary key (HUB_" + hubname + "_HK)\n" )
-        sb.append ( ")" )
-        desc = modutils.getDescription ( c.cls )
-        if modutils.isNullOrEmptyString ( desc ) == False: sb.append ( " COMMENT = '" + modutils.cleanForSqlComment ( desc ) + "'" )
-        sb.append ( ";\n" )
-        modutils.writeTextFile ( f, sb );
-        print "HUB => " + f.getAbsolutePath ()
-    f = modutils.createFile ( genpath.getAbsolutePath () + "\\SAT_" + hubname + ".ddl" )
+    f = modutils.createFile ( genpath.getAbsolutePath () + "\\HUB_" + hubname + ".ddl" )
     sb = modutils.createStringBuilder ()
-    sb.append ( "create or replace TABLE SAT_" + hubname + " (\n" )
-    sb.append ( "   HUB_" + hubname + "_HK VARCHAR(32),\n" )
-    sb.append ( "   SAT_LOAD_DTS TIMESTAMP_NTZ(9) NOT NULL COMMENT 'Load Time',\n" )
-    sb.append ( "   SAT_REC_SRC VARCHAR(50) NOT NULL COMMENT 'Application Source',\n" )
-    sb.append ( "   SAT_HASH_DIFF VARCHAR(32) NOT NULL,\n" )
-    for a in c.attributes:
-        stcolname = modutils.getStereotypeInstValueString ( a, modutils.getProjectStereotype ( "COL_NAME" ), "Name" )
-        colname = modutils.getUpperSqlNameFromJavaName ( a.getName () )
-        if modutils.isNullOrEmptyString ( stcolname ) == False: colname = stcolname
-        sb.append ( "   " + colname + " " + dbtypemapping.findValueOrNull ( a.getType().getName() ) ) 
+    sb.append ( "create or replace TABLE HUB_" + hubname + " (\n" )
+    sb.append ( "	HUB_" + hubname + "_HK VARCHAR(32),\n" )
+    sb.append ( "	HUB_" + hubname + "_BK VARCHAR(32),\n" )
+    sb.append ( "	HUB_LOAD_DTS TIMESTAMP_NTZ(9) NOT NULL COMMENT 'Load Time',\n" )
+    sb.append ( "	HUB_REC_SRC VARCHAR(50) NOT NULL COMMENT 'Application Source',\n" )
+    sb.append ( "   constraint PK_HUB_" + hubname + " primary key (HUB_" + hubname + "_HK)\n" )
+    sb.append ( ")" )
+    desc = modutils.getDescription ( c.cls )
+    if modutils.isNullOrEmptyString ( desc ) == False: sb.append ( " COMMENT = '" + modutils.cleanForSqlComment ( desc ) + "'" )
+    sb.append ( ";\n" )
+    modutils.writeTextFile ( f, sb );
+    print "HUB => " + f.getAbsolutePath ()
+    if mas.getMotherClass ( c.cls ) :
+        mother = mas.getMotherClass ( c.cls )
+        linkname = c.cls.getName () .upper () + "_" + mother.cls.getName () .upper () + "_CHILD"
+        hubtargetname = modutils.getUpperSqlNameFromJavaName (  mother.cls.getName () )
+        f = modutils.createFile ( genpath.getAbsolutePath () + "\\LINK_" + linkname + ".ddl" )
+        sb = modutils.createStringBuilder ()
+        sb.append ( "create or replace TABLE LINK_" + linkname + " (\n" )
+        sb.append ( "	LINK_" + linkname + "_HK VARCHAR(32),\n" )
+        sb.append ( "	LINK_" + linkname + "_BK VARCHAR(32),\n" )
+        sb.append ( "	LINK_LOAD_DTS TIMESTAMP_NTZ(9) NOT NULL COMMENT 'Load Time',\n" )
+        sb.append ( "	LINK_REC_SRC VARCHAR(50) NOT NULL COMMENT 'Application Source',\n" )
+        sb.append ( "	HUB_" + hubname + "_HK VARCHAR(32),\n" )
+        sb.append ( "	HUB_" + hubtargetname + "_HK VARCHAR(32),\n" )
+        sb.append ( "   constraint PK_LINK_" + linkname + " primary key (LINK_" + linkname + "_HK),\n" )
+        sb.append ( "   constraint FK_LINK_" + linkname + "_HUB_" + hubname + " foreign key (HUB_" + hubname + "_HK) references HUB_" + hubname + "(HUB_" + hubname + "_HK),\n" )
+        sb.append ( "   constraint FK_LINK_" + linkname + "_HUB_" + hubtargetname + " foreign key (HUB_" + hubtargetname + "_HK) references HUB_" + hubtargetname + "(HUB_" + hubtargetname + "_HK)\n" )
+        sb.append ( "" )
+        sb.append ( ")" )
         desc = modutils.getDescription ( a )
         if modutils.isNullOrEmptyString ( desc ) == False: sb.append ( " COMMENT '" + modutils.cleanForSqlComment ( desc ) + "'" )
-        sb.append ( ",\n" )
-    sb.append ( "   constraint PK_SAT_" + hubname + " primary key (HUB_" + hubname + "_HK, SAT_LOAD_DTS),\n" )
-    sb.append ( "   constraint FK_SAT_" + hubname + " foreign key (HUB_" + hubname + "_HK) references HUB_" + hubname + "(HUB_" + hubname + "_HK)\n" )
-    sb.append ( ");\n" )
-    modutils.writeTextFile ( f, sb );
-    print "SAT => " + f.getAbsolutePath ()
+        sb.append ( ";\n" )
+        modutils.writeTextFile ( f, sb );
+        print "LINK => " + f.getAbsolutePath ()
+
+    stsatnames = modutils.createBasicEMap ()
+    stsatnames.put ( '', None )
+    for a in mas.getAttributesFromClass ( c.cls ):
+        satname = modutils.getStereotypeInstValueString ( a, modutils.getProjectStereotype ( "SatelliteName" ), "Name" )
+        if modutils.isNullOrEmptyString ( satname ) == False and stsatnames.get ( satname ) == None:
+            stsatnames.put ( satname, None )
+    for stsatname in stsatnames.entrySet ():
+        satname = hubname
+        if modutils.isNullOrEmptyString ( stsatname.getKey () ) == False:
+                satname = satname + '_' + modutils.getUpperSqlNameFromJavaName ( stsatname.getKey () )
+        f = modutils.createFile ( genpath.getAbsolutePath () + "\\SAT_" + satname + ".ddl" )
+        sb = modutils.createStringBuilder ()
+        sb.append ( "create or replace TABLE SAT_" + satname + " (\n" )
+        sb.append ( "   HUB_" + hubname + "_HK VARCHAR(32),\n" )
+        sb.append ( "   SAT_LOAD_DTS TIMESTAMP_NTZ(9) NOT NULL COMMENT 'Load Time',\n" )
+        sb.append ( "   SAT_REC_SRC VARCHAR(50) NOT NULL COMMENT 'Application Source',\n" )
+        sb.append ( "   SAT_HASH_DIFF VARCHAR(32) NOT NULL,\n" )
+        for a in mas.getAttributesFromClass ( c.cls ):
+            stsatname_ = modutils.getStereotypeInstValueString ( a, modutils.getProjectStereotype ( "SatelliteName" ), "Name" )
+            if ( stsatname_ == stsatname.getKey () ) or ( modutils.isNullOrEmptyString ( stsatname_ ) and modutils.isNullOrEmptyString ( stsatname.getKey () ) ):
+                colname = modutils.getUpperSqlNameFromJavaName ( a.getName () )
+                sb.append ( "   " + colname + " " + dbtypemapping.findValueOrNull ( a.getType().getName() ) ) 
+                desc = modutils.getDescription ( a )
+                if modutils.isNullOrEmptyString ( desc ) == False: sb.append ( " COMMENT '" + modutils.cleanForSqlComment ( desc ) + "'" )
+                sb.append ( ",\r" )
+        sb.append ( "   constraint PK_SAT_" + satname + " primary key (HUB_" + hubname + "_HK, SAT_LOAD_DTS),\n" )
+        sb.append ( "   constraint FK_SAT_" + satname + " foreign key (HUB_" + hubname + "_HK) references HUB_" + hubname + "(HUB_" + hubname + "_HK)\n" )
+        sb.append ( ");\n" )
+        modutils.writeTextFile ( f, sb );
+        print "SAT => " + f.getAbsolutePath ()
     for a in c.associations:
         linkname = c.cls.getName () .upper () + "_" + a.getTarget ().getName () .upper () + "_" + a.getName () .upper ()
         hubtargetname = modutils.getUpperSqlNameFromJavaName ( a.getTarget () .getName () )

@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="SatelliteName" version="4">
+  <OBJECT>
+    <ID name="SatelliteName" mc="Infrastructure.Stereotype" uid="78038090-4e4c-4381-b63a-de8ee4ccac57"/>
+    <PID name="LocalProfile" mc="Infrastructure.Profile" uid="b43322de-4ba7-4240-bb07-feaeb62df6f0"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"></ATT>
+      <ATT name="IsHidden">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="LabelKey"><![CDATA[SatelliteName]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Standard.Attribute]]></ATT>
+      <ATT name="Name"><![CDATA[SatelliteName]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DefinedTable">
+        <COMPID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="170449b0-ad2b-4ebf-adb9-c1756ed74b71"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

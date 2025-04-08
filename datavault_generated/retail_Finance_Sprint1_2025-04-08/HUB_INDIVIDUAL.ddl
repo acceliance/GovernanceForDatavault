@@ -1,0 +1,7 @@
+create or replace TABLE HUB_INDIVIDUAL (
+	HUB_INDIVIDUAL_HK VARCHAR(32),
+	HUB_INDIVIDUAL_BK VARCHAR(32),
+	HUB_LOAD_DTS TIMESTAMP_NTZ(9) NOT NULL COMMENT 'Load Time',
+	HUB_REC_SRC VARCHAR(50) NOT NULL COMMENT 'Application Source',
+   constraint PK_HUB_INDIVIDUAL primary key (HUB_INDIVIDUAL_HK)
+) COMMENT = 'Represents the physical person';

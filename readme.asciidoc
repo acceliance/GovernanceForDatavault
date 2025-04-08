@@ -118,7 +118,6 @@ We have seen the following items regarding Datavault Governance:
 There are missing functionalitties such as:
 
 * Transaction Links generation (those links are used to optimize sql object volumetry, the technical pattern is that the object must have **only** relations of cadinality **Many To One**, in the case of the Retail Model, the **ProductBuying** object is a right candidate)
-* Multi Satellite generation (this feature can be implemeted using stereotypes and then generating several satellites for one Model object)
 * You may adapt the script for other platform such as Postgres (modify the type mapping table in the Python script)
 
 All of the improvement can be added into the link:macros/generate_datavault_for_sprint.py[Python script]
