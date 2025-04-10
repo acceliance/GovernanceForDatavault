@@ -72,6 +72,18 @@ image:readme/gov-dv-011.png[]
 The DDL script for Snowflake is generated into a link:datavault_generated/retail_Finance_Sprint1_2025-02-13[dedicated folder] suffixed with the today date
 image:readme/gov-dv-012.png[]
 
+=== Multi Satellite generation
+It is possible to span UML attributes into different target Satellites (for instance to separate raw and business ruled columns)
+
+To do so, the scripts is adapted to use Modelio stereotype. The stereotype is created in the module part of the Modelio project.
+image:readme/gov-dv-017.png[The satellite stereotype] 
+
+Then the stereotype is applied to one or several attributes in a class to span to different satellite. The name of the satellite is used for grouping the columns into the satellite.
+image:readme/gov-dv-018.png[Using the satellite stereotype] 
+
+The output satellite is hown as this:
+image:readme/gov-dv-019.png[Satellite by name] 
+
 == More on Governance
 === Documenting the Model
 The Model can be annotated with extensive documentation, as with cartography, the contents is governed using Excel (must be reinjectd back into the model)
