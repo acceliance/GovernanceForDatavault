@@ -12,17 +12,10 @@ mn = modutils.getMessageNotifier ()
 mn.subscribeListener ( notifyMessage )
 
 #Below the type mapping for Snowflake, feel free to adapt it for your own databae techno
-dbtypemapping = modutils.createKeyedList ()
-dbtypemapping.addValue( modutils.getUMLType ("boolean" ).getName(), "BOOLEAN" )
-dbtypemapping.addValue( modutils.getUMLType ("byte" ).getName(), "TINYINT" )
-dbtypemapping.addValue( modutils.getUMLType ("char" ).getName(), "CHAR" )
-dbtypemapping.addValue( modutils.getUMLType ("date" ).getName(), "DATETIME" )
-dbtypemapping.addValue( modutils.getUMLType ("double" ).getName(), "FLOAT8" )
-dbtypemapping.addValue( modutils.getUMLType ("float" ).getName(), "FLOAT4" )
-dbtypemapping.addValue( modutils.getUMLType ("integer" ).getName(), "INTEGER" )
-dbtypemapping.addValue( modutils.getUMLType ("long" ).getName(), "INTEGER" )
-dbtypemapping.addValue( modutils.getUMLType ("short" ).getName(), "SMALLINT" )
-dbtypemapping.addValue( modutils.getUMLType ("string" ).getName(), "TEXT" )
+tm = modutils.createTypeMapper ()
+td = tm.getTargetDatabaseFromString ( "Snowflake" ) # allowed types => PostGre, Snowflake, BigQuery, Synapse
+ti = tm.getDatabaseTypeInfos ( td )
+
 	
 
 print "Start generate DataVault objects"
@@ -39,7 +32,7 @@ print genpath
 
 for c in mas.getClasses():
     sthubname = modutils.getStereotypeInstValueString ( c.cls, modutils.getProjectStereotype ( "HUB_NAME" ), "Name" )
-    hubname = modutils.getUpperSqlNameFromJavaName ( c.cls.getName () )
+    hubname = tm.transformDatabaseIdentifierCase ( c.cls.getName (), ti.cas )
     if modutils.isNullOrEmptyString ( sthubname ) == False: hubname = sthubname
     f = modutils.createFile ( genpath.getAbsolutePath () + "\\HUB_" + hubname + ".ddl" )
     sb = modutils.createStringBuilder ()
@@ -58,7 +51,7 @@ for c in mas.getClasses():
     if mas.getMotherClass ( c.cls ) :
         mother = mas.getMotherClass ( c.cls )
         linkname = c.cls.getName () .upper () + "_" + mother.cls.getName () .upper () + "_CHILD"
-        hubtargetname = modutils.getUpperSqlNameFromJavaName (  mother.cls.getName () )
+        hubtargetname = tm.transformDatabaseIdentifierCase (  mother.cls.getName (), ti.cas )
         f = modutils.createFile ( genpath.getAbsolutePath () + "\\LINK_" + linkname + ".ddl" )
         sb = modutils.createStringBuilder ()
         sb.append ( "create or replace TABLE LINK_" + linkname + " (\n" )
@@ -88,7 +81,7 @@ for c in mas.getClasses():
     for stsatname in stsatnames.entrySet ():
         satname = hubname
         if modutils.isNullOrEmptyString ( stsatname.getKey () ) == False:
-                satname = satname + '_' + modutils.getUpperSqlNameFromJavaName ( stsatname.getKey () )
+                satname = satname + '_' + tm.transformDatabaseIdentifierCase ( stsatname.getKey (), ti.cas )
         f = modutils.createFile ( genpath.getAbsolutePath () + "\\SAT_" + satname + ".ddl" )
         sb = modutils.createStringBuilder ()
         sb.append ( "create or replace TABLE SAT_" + satname + " (\n" )
@@ -99,8 +92,8 @@ for c in mas.getClasses():
         for a in mas.getAttributesFromClass ( c.cls ):
             stsatname_ = modutils.getStereotypeInstValueString ( a, modutils.getProjectStereotype ( "SatelliteName" ), "Name" )
             if ( stsatname_ == stsatname.getKey () ) or ( modutils.isNullOrEmptyString ( stsatname_ ) and modutils.isNullOrEmptyString ( stsatname.getKey () ) ):
-                colname = modutils.getUpperSqlNameFromJavaName ( a.getName () )
-                sb.append ( "   " + colname + " " + dbtypemapping.findValueOrNull ( a.getType().getName() ) ) 
+                colname = tm.transformDatabaseIdentifierCase ( a.getName (), ti.cas )
+                sb.append ( "   " + colname + " " + tm.getDatabaseTypeFromUml ( a.getType().getName(), td ) ) 
                 desc = modutils.getDescription ( a )
                 if modutils.isNullOrEmptyString ( desc ) == False: sb.append ( " COMMENT '" + modutils.cleanForSqlComment ( desc ) + "'" )
                 sb.append ( ",\r" )
@@ -111,7 +104,7 @@ for c in mas.getClasses():
         print "SAT => " + f.getAbsolutePath ()
     for a in c.associations:
         linkname = c.cls.getName () .upper () + "_" + a.getTarget ().getName () .upper () + "_" + a.getName () .upper ()
-        hubtargetname = modutils.getUpperSqlNameFromJavaName ( a.getTarget () .getName () )
+        hubtargetname = tm.transformDatabaseIdentifierCase ( a.getTarget () .getName (), ti.cas )
         f = modutils.createFile ( genpath.getAbsolutePath () + "\\LINK_" + linkname + ".ddl" )
         sb = modutils.createStringBuilder ()
         sb.append ( "create or replace TABLE LINK_" + linkname + " (\n" )

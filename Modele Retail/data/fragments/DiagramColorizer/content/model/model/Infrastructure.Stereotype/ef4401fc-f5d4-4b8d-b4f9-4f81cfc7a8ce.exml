@@ -9,7 +9,7 @@
       <ATT name="IsHidden">false</ATT>
       <ATT name="IsAbstract">false</ATT>
       <ATT name="LabelKey"><![CDATA[ClassColor]]></ATT>
-      <ATT name="BaseClassName"><![CDATA[GeneralClass]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Standard.GeneralClass]]></ATT>
       <ATT name="Name"><![CDATA[DiagramColorizerColorClass]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>

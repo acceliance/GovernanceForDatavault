@@ -3,9 +3,11 @@ link:https://www.acceliance.fr/en/offers/governance-for-your-data-platform/[imag
 = Governance for Datavault on Snowflake by Acceliance
 
 
-We are pleased to provide you with a link:https://github.com/acceliance/ModelioForDataGovernance[practice for governing] the Datavault model including **automatic raw model generator**
+We are pleased to provide you with a link:https://github.com/acceliance/ModelioForDataGovernance[practice for governing] the Datavault model including **automatic datavault model generator**
 
 This Datavault generator is freely brought to you by link:https://www.acceliance.fr/en/[Acceliance], feel free to reuse it and adapt it for your own needs
+
+It was first hard coded for Snowflake but now uses a type mapper for PostGre, Snowflake, BigQuery, Synapse (choose the proper target in the link:macros/generate_datavault_for_sprint.py[script])
 
 = Before starting
 == Install Modelio
