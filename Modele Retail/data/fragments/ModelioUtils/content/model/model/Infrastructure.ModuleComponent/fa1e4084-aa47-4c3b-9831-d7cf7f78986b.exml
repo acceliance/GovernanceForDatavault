@@ -14,7 +14,7 @@
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="DefinedPropertyType">
-        <COMPID name="ForceLogExceptionStack" mc="Infrastructure.EnumeratedPropertyType" uid="4d4ed2c8-7ed7-4673-a891-d404c719e4dd"/>
+        <COMPID name="ForceLogExceptionStack" mc="Infrastructure.EnumeratedPropertyType" uid="1b40dcd4-4eb4-4cd9-9589-aac9ca722b87"/>
       </COMP>
       <COMP relation="ModuleParameter">
         <OBJECT>
@@ -32,7 +32,7 @@
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="EnumType">
-              <ID name="ForceLogExceptionStack" mc="Infrastructure.EnumeratedPropertyType" uid="4d4ed2c8-7ed7-4673-a891-d404c719e4dd"/>
+              <ID name="ForceLogExceptionStack" mc="Infrastructure.EnumeratedPropertyType" uid="1b40dcd4-4eb4-4cd9-9589-aac9ca722b87"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>

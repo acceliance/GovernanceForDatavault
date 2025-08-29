@@ -1,4 +1,4 @@
-#Thu Jun 26 15:43:23 CEST 2025
+#Wed Aug 20 16:02:31 CEST 2025
 org.modelio.app.module.propertytab.GPart\ [id\='JavaDesigner',\ version\='5.3.00',\ type\='MODULE',\ definitionScope\='LOCAL',\ state\='MOUNTED']\ runtime\ module_.org.modelio.development.perspective.parentId=app.ui.ext_com.partstack.bottom
 org.modelio.app.module.propertytab.GModule\ [id\='JavaDesigner',\ version\='5.4.00',\ type\='MODULE',\ definitionScope\='LOCAL',\ state\='MOUNTED']\ runtime\ module_.org.modelio.full.perspective.parentId=app.ui.ext_com.partstack.bottom
 org.modelio.app.module.propertytab.JavaDesigner\ v3.10.00\ GModule\ @file\:///C\:/Users/joset/.modelio/4.1/opensource-cache/conf/org.eclipse.osgi/292/data/modules_cache/JavaDesigner_3.10.00/0/JavaDesigner_3.10.00.jmdac\ runtime\ module_.org.modelio.full.perspective.parentId=app.ui.ext_com.partstack.bottom
