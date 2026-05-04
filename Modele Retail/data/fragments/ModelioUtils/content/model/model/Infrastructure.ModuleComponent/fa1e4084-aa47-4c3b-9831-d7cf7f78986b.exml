@@ -14,7 +14,7 @@
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="DefinedPropertyType">
-        <COMPID name="ForceLogExceptionStack" mc="Infrastructure.EnumeratedPropertyType" uid="1b40dcd4-4eb4-4cd9-9589-aac9ca722b87"/>
+        <COMPID name="ForceLogExceptionStack" mc="Infrastructure.EnumeratedPropertyType" uid="41d95302-4ac4-422e-93d2-a4e734ce7126"/>
       </COMP>
       <COMP relation="ModuleParameter">
         <OBJECT>
@@ -32,7 +32,7 @@
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="EnumType">
-              <ID name="ForceLogExceptionStack" mc="Infrastructure.EnumeratedPropertyType" uid="1b40dcd4-4eb4-4cd9-9589-aac9ca722b87"/>
+              <ID name="ForceLogExceptionStack" mc="Infrastructure.EnumeratedPropertyType" uid="41d95302-4ac4-422e-93d2-a4e734ce7126"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
@@ -47,6 +47,21 @@
             <ATT name="IsApiWrite">true</ATT>
             <ATT name="DefaultValue"><![CDATA[false]]></ATT>
             <ATT name="Name"><![CDATA[RedirectLogToMessageNofifier]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="EnableModelExport" mc="Infrastructure.ModuleParameter" uid="84602A88-0ED2-423F-84EE-3C417039B78D"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_BOOLEAN</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"><![CDATA[false]]></ATT>
+            <ATT name="Name"><![CDATA[EnableModelExport]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES></DEPENDENCIES>

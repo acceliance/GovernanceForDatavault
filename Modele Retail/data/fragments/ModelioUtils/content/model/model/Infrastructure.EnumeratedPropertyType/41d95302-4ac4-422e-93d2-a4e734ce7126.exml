@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ForceLogExceptionStack" version="4">
   <OBJECT>
-    <ID name="ForceLogExceptionStack" mc="Infrastructure.EnumeratedPropertyType" uid="1b40dcd4-4eb4-4cd9-9589-aac9ca722b87"/>
+    <ID name="ForceLogExceptionStack" mc="Infrastructure.EnumeratedPropertyType" uid="41d95302-4ac4-422e-93d2-a4e734ce7126"/>
     <PID name="ModelioUtils" mc="Infrastructure.ModuleComponent" uid="fa1e4084-aa47-4c3b-9831-d7cf7f78986b"/>
     <ATTRIBUTES>
       <ATT name="BaseType">String</ATT>
@@ -11,7 +11,7 @@
     <DEPENDENCIES>
       <COMP relation="Litteral">
         <OBJECT>
-          <ID name="LeaveAsIs" mc="Infrastructure.PropertyEnumerationLitteral" uid="2444c988-1d2d-4557-860b-fc4d296e9e02"/>
+          <ID name="LeaveAsIs" mc="Infrastructure.PropertyEnumerationLitteral" uid="56714c48-8712-4d9a-9726-a2c382ee6cf7"/>
           <ATTRIBUTES>
             <ATT name="Name"><![CDATA[LeaveAsIs]]></ATT>
             <ATT name="status">1970354901745664</ATT>
@@ -19,7 +19,7 @@
           <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="ForceGeneration" mc="Infrastructure.PropertyEnumerationLitteral" uid="41d21895-a5d2-4e3f-b557-467ef02900d6"/>
+          <ID name="ForceGeneration" mc="Infrastructure.PropertyEnumerationLitteral" uid="ad0661ef-e305-4a99-b722-cb1126d70735"/>
           <ATTRIBUTES>
             <ATT name="Name"><![CDATA[ForceGeneration]]></ATT>
             <ATT name="status">1970354901745664</ATT>
