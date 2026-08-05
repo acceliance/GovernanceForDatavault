@@ -1,7 +1,18 @@
 link:https://www.acceliance.fr/en/offers/governance-for-your-data-platform/[image:readme/logo-acc-amp-gauche-2400.png[]]
 
-= Governance for Datavault on Snowflake by Acceliance
+= Governance for Datavault on Snowflake, BigQuery & Synapse by Acceliance
 
+image:https://img.shields.io/badge/Modelio-5.4.1-blue[Modelio 5.4.1,link=https://github.com/ModelioOpenSource/Modelio/releases/tag/v5.4.1,window=_blank]
+image:https://img.shields.io/badge/scripting-Jython%202.7-3776AB?logo=python&logoColor=white[Jython 2.7 macro,link=macros/generate_datavault_for_sprint.py]
+image:https://img.shields.io/badge/Data%20Vault-HUB%20%7C%20LINK%20%7C%20SAT-blue[Data Vault artefacts]
+image:https://img.shields.io/badge/targets-Snowflake%20%7C%20PostgreSQL%20%7C%20BigQuery%20%7C%20Synapse-29B5E8?logo=snowflake&logoColor=white[Target databases]
+image:https://img.shields.io/badge/Acceliance%20modules-5.4.01-blue[Acceliance Modelio modules]
+
+image:https://img.shields.io/badge/governance-sprint%20%2F%20attribute%20level-success[Sprint-level governance]
+image:https://img.shields.io/badge/cartography-Excel%20round--trip-217346[Excel cartography round-trip]
+image:https://img.shields.io/badge/licence-free%20to%20reuse-green[Free to reuse]
+image:https://img.shields.io/badge/vendor-Acceliance-orange[Acceliance,link=https://www.acceliance.fr/en/,window=_blank]
+image:https://img.shields.io/github/last-commit/acceliance/GovernanceForDatavault[Last commit,link=https://github.com/acceliance/GovernanceForDatavault/commits/main,window=_blank]
 
 We are pleased to provide you with a link:https://github.com/acceliance/ModelioForDataGovernance[practice for governing] the Datavault model including **automatic datavault model generator**
 
